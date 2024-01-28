@@ -11,7 +11,7 @@ function fetchWikiArticle() {
         const title = data[1][0];
         const link = data[3][0];
         const result = `
-          <h2><a href="${link}" target="_blank">${title}</a></h2>
+          <h2 style="font-size: 25px;"><a href="${link}" target="_blank">${title}</a></h2>
           <div id="wikiContent"></div>
         `;
         document.getElementById('wikiResult').innerHTML = result;
